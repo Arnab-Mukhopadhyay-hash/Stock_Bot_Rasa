@@ -53,7 +53,8 @@ stories:
   - story: explain stoploss
     steps:
       - intent: ask_stoploss
-      - action: 
+      - action: utter_ask_stoploss
+      
   - story: goodbye
     steps:
       - intent: goodbye
