@@ -2,33 +2,68 @@ version: "3.1"
 
 intents:
   - greet
+  - ask_stock_market
+  - ask_basics
+  - ask_investment
+  - ask_book_value
+  - ask_pe_ratio
+  - ask_pb_ratio
+  - ask_face_value
+  - ask_debt_to_equity
+  - ask_roe
+  - ask_eps
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+
+entities:
+  - stock
+  - market
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "হাই! আমি কীভাবে আপনাকে স্টক মার্কেটের মূল বিষয়গুলি শিখতে সহায়তা করতে পারি?"
+  
+  utter_ask_stock_market:
+    - text: "স্টক মার্কেট হল এমন একটি স্থান যেখানে শেয়ার এবং অন্যান্য সিকিউরিটিজ কেনা এবং বিক্রি করা হয়। আপনি কি কিছু বিশেষ জানতে চান?"
+  
+  utter_ask_basics:
+    - text: "স্টক মার্কেটের বেসিক বিষয়গুলো হল শেয়ার, স্টক, এবং তাদের মূল্য। এটি অর্থনৈতিক প্রক্রিয়া থেকে বিনিয়োগকারীদের জন্য গুরুত্বপূর্ণ।"
+  
+  utter_ask_investment:
+    - text: "স্টক মার্কেটে বিনিয়োগের আগে আপনি আপনার ঝুঁকি ক্ষমতা, সময়কাল, এবং লক্ষ্যের উপর ভিত্তি করে সিদ্ধান্ত নিতে হবে।"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_ask_book_value:
+    - text: "বুক ভ্যালু (Book Value) হলো একটি কোম্পানির সম্পদের মোট মূল্য থেকে তার মোট দেনা বাদ দেওয়ার পর যে মূল্য থাকে। এটি কোম্পানির শেয়ার প্রতি অবশিষ্ট মূল্য হিসাব করা হয়।"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_ask_pe_ratio:
+    - text: "P/E রেশন (Price-to-Earnings Ratio) হলো একটি কোম্পানির শেয়ার মূল্যের তুলনায় তার আয় কতটা। এটি কোম্পানির শেয়ার মূল্য কেমন সাশ্রয়ী বা সস্তা তা বুঝতে সাহায্য করে।"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_ask_pb_ratio:
+    - text: "P/B রেশন (Price-to-Book Ratio) হলো কোম্পানির শেয়ার মূল্যকে তার বুক ভ্যালুর (অথবা শেয়ার প্রতি সম্পত্তির মূল্য) সাথে তুলনা করা। এটি একটি মূল্যায়ন রেশন যা আপনাকে জানায় শেয়ারটি কোম্পানির প্রকৃত মূল্য থেকে কতটা দামি।"
 
+  utter_ask_face_value:
+    - text: "ফেস ভ্যালু (Face Value) হলো একটি শেয়ারের প্রাথমিক মূল্যে, যা শেয়ার ইস্যু করার সময় নির্ধারিত হয়। এটি শেয়ারের নামমাত্র মূল্য এবং কোম্পানির শেয়ারের পরিমাণ বা মূল্য পরিমাপের জন্য গুরুত্বপূর্ণ।"
+
+  utter_ask_debt_to_equity:
+    - text: "ডেবট-টু-ইকুইটি রেশন (Debt-to-Equity Ratio) হলো একটি কোম্পানির ঋণ এবং শেয়ারহোল্ডারদের ইকুইটির মধ্যে সম্পর্ক। এটি দেখায় কোম্পানি কতটা ঋণগ্রস্ত এবং ইকুইটি কতটা শক্তিশালী।"
+
+  utter_ask_roe:
+    - text: "ROE (Return on Equity) হলো একটি কোম্পানির শেয়ারহোল্ডারদের ইকুইটির উপর আয়। এটি দেখায় কতটুকু লাভ কোম্পানি তার শেয়ারহোল্ডারদের বিনিয়োগ থেকে উপার্জন করছে।"
+
+  utter_ask_eps:
+    - text: "EPS (Earnings Per Share) হলো কোম্পানির শেয়ারের প্রতি আয়। এটি শেয়ারহোল্ডারদের জন্য একটি গুরুত্বপূর্ণ মাপকাঠি যা জানায় শেয়ার প্রতি লাভ কত।"
+
+  utter_ask_stoploss:
+    - text: "স্টপ লস হ'ল একটি স্বয়ংক্রিয় নির্দেশ যা কোনও ব্যক্তি তাদের ব্রোকারের সাথে একটি সুরক্ষা বিক্রয় কার্যকর করার জন্য সেট করে যদি মূল্য একটি নির্দিষ্ট স্তরের নীচে নেমে আসে। এটি বিনিয়োগকারীদের স্টক এবং বন্ড বিক্রয়ের মাধ্যমে ক্যাপ করে তাদের ক্ষতি পরিচালনা করতে সহায়তা করে যখন মূল্য একটি নির্দিষ্ট পয়েন্টের নীচে নেমে যায়"
+    
   utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+    - text: "ধন্যবাদ! যদি আবার কিছু জানতে চান, আমি এখানে আছি। শুভদিন!"
+  
+actions:
+  - action_ask_basics
+  - action_ask_book_value
+  - action_ask_pe_ratio
+  - action_ask_pb_ratio
+  - action_ask_face_value
+  - action_ask_debt_to_equity
+  - action_ask_roe
+  - action_ask_eps

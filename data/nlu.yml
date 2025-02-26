@@ -1,91 +1,82 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - হ্যালো
+      - নমস্কার
+      - শুভ সকাল
+      - কি খবর?
+      - হাই
+  
+  - intent: ask_stock_market
+    examples: |
+      - স্টক মার্কেট কী?
+      - আমি স্টক মার্কেট সম্পর্কে জানতে চাই
+      - স্টক মার্কেট কিভাবে কাজ করে?
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: ask_basics
+    examples: |
+      - স্টক মার্কেটের বেসিক কি?
+      - স্টক মার্কেট কি?
+      - আমি স্টক মার্কেট শিখতে চাই
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: ask_investment
+    examples: |
+      - আমি কিভাবে স্টক মার্কেটে বিনিয়োগ শুরু করব?
+      - বিনিয়োগের জন্য কি করতে হবে?
+      - স্টক মার্কেটে টাকা বিনিয়োগ করা কি নিরাপদ?
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: ask_book_value
+    examples: |
+      - বুক ভ্যালু কি?
+      - বুক ভ্যালু কীভাবে হিসাব করা হয়?
+      - একটি কোম্পানির বুক ভ্যালু কিভাবে কাজ করে?
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: ask_pe_ratio
+    examples: |
+      - P/E রেশন কি?
+      - P/E রেশিও কিভাবে হিসাব করা হয়?
+      - P/E রেশন কি নির্দেশ করে?
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: ask_pb_ratio
+    examples: |
+      - P/B রেশন কি?
+      - P/B রেশন কিভাবে হিসাব করা হয়?
+      - P/B রেশন কি বোঝায়?
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: ask_face_value
+    examples: |
+      - ফেস ভ্যালু কি?
+      - ফেস ভ্যালু কি উদ্দেশ্যে ব্যবহার করা হয়?
+      - শেয়ারের ফেস ভ্যালু কিভাবে কাজ করে?
+
+  - intent: ask_debt_to_equity
+    examples: |
+      - ডেবট-টু-ইকুইটি রেশন কি?
+      - ডেবট-টু-ইকুইটি রেশন কিভাবে হিসাব করা হয়?
+      - ডেবট-টু-ইকুইটি রেশন কি বোঝায়?
+
+  - intent: ask_roe
+    examples: |
+      - ROE কি?
+      - ROE কিভাবে হিসাব করা হয়?
+      - ROE কেন গুরুত্বপূর্ণ?
+
+  - intent: ask_eps
+    examples: |
+      - EPS কি?
+      - EPS কিভাবে হিসাব করা হয়?
+      - EPS কি নির্দেশ করে?
+
+  - intent: ask_stoploss
+    examples: |
+      - স্টপলস কি?
+      
+  - intent: goodbye
+    examples: |
+      - বিদায়
+      - আবার দেখা হবে
+      - আলবিদা
+  
+

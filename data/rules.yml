@@ -1,13 +1,25 @@
-version: "3.1"
+# version: "3.1"
+# rules:
+#   - rule: Greet
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+  
+#   - rule: Ask Balance
+#     steps:
+#       -intent: ask_balance
+#       -action: utter_ask_balance
 
-rules:
+#   - rule: Greet and Provide Investment Advice
+#     steps:
+#       - intent: greet
+#         action: utter_greet
+#       - intent: investment_advice
+#         action: utter_investment_advice
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+#   - rule: Goodbye after Investment Advice
+#     steps:
+#       - intent: goodbye
+#         action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+

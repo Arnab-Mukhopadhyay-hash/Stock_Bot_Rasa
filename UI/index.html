@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="chat-container">
+        <div id="chat-header">
+            <h1><span id="stock-name">STOCK</span> <span id="bot-name">Bot</span></h1>
+        </div>
+        <div id="chatbox">
+            <div id="chatlogs"></div>
+        </div>
+        <div id="user-input">
+            <input type="text" id="user_input" placeholder="আপনার প্রশ্ন লিখুন..." onkeydown="if(event.key === 'Enter'){sendMessage()}">
+            <button id="send_btn" onclick="sendMessage()">প্রেরণ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

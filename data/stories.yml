@@ -1,30 +1,60 @@
 version: "3.1"
 
 stories:
+  - story: greet and explain stock market
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_stock_market
+      - action: utter_ask_stock_market
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: explain basics of stock market
+    steps:
+      - intent: ask_basics
+      - action: utter_ask_basics
+      - intent: ask_investment
+      - action: utter_ask_investment
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: explain book value
+    steps:
+      - intent: ask_book_value
+      - action: utter_ask_book_value
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: explain PE ratio
+    steps:
+      - intent: ask_pe_ratio
+      - action: utter_ask_pe_ratio
+
+  - story: explain PB ratio
+    steps:
+      - intent: ask_pb_ratio
+      - action: utter_ask_pb_ratio
+
+  - story: explain face value
+    steps:
+      - intent: ask_face_value
+      - action: utter_ask_face_value
+
+  - story: explain debt to equity ratio
+    steps:
+      - intent: ask_debt_to_equity
+      - action: utter_ask_debt_to_equity
+
+  - story: explain ROE
+    steps:
+      - intent: ask_roe
+      - action: utter_ask_roe
+
+  - story: explain EPS
+    steps:
+      - intent: ask_eps
+      - action: utter_ask_eps
+
+  - story: explain stoploss
+    steps:
+      - intent: ask_stoploss
+      - action: 
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
