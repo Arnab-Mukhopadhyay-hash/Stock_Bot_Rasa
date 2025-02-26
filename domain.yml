@@ -12,6 +12,7 @@ intents:
   - ask_debt_to_equity
   - ask_roe
   - ask_eps
+  - ask_stoploss
   - goodbye
 
 entities:

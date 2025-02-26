@@ -47,8 +47,7 @@ function sendMessage() {
     userInput.value = "";
 
     // Send user message to Rasa API
-    fetch('https://super-duper-cod-rxj6499w9p7hqqq-5005.app.github.dev/webhooks/rest/webhook', {
-        // mode: 'no-cors',
+    fetch('https://super-duper-cod-rxj6499w9p7hqqq-5005.app.github.dev', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -10,8 +10,14 @@
 # Server which runs your custom actions.
 # https://rasa.com/docs/rasa/custom-actions
 
-#action_endpoint:
-# url: "http://localhost:5055/webhooks/rest/webhook"
+action_endpoint:
+  url: "https://super-duper-cod-rxj6499w9p7hqqq-5500.app.github.dev/webhooks/rest/webhook"
+
+# Add the CORS configuration section
+rest:
+  url: "https://super-duper-cod-rxj6499w9p7hqqq-5005.app.github.dev/webhooks/rest/webhook"
+  cors: "*"
+
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
@@ -40,3 +46,4 @@
 #  username: username
 #  password: password
 #  queue: queue
+
